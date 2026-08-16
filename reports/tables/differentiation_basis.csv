@@ -1,0 +1,5 @@
+segment,units,target_service_level,annual_revenue,safety_stock_holding_cost,median_buffer_cost_per_1000_revenue,median_days_of_cover
+AX,7,0.98,9828260.4186,13635.594,1.384,17.9459
+BX,2,0.95,1444721.7281,1605.0961,1.1238,25.3448
+BZ,2,0.95,44419.8456,140.9107,3.1722,135.9342
+CZ,29,0.9,255031.1737,651.7213,2.5488,227.6037

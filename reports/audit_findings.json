@@ -1,0 +1,159 @@
+{
+  "leadtime": {
+    "modes": [
+      {
+        "shipping_mode": "First Class",
+        "rows": 27814,
+        "scheduled_days": 1.0,
+        "observed_mean": 2.0,
+        "observed_std": 0.0,
+        "support": [
+          2
+        ],
+        "is_degenerate": true,
+        "uniform_chi2": NaN,
+        "uniform_p_value": NaN,
+        "reads_as_uniform": false,
+        "late_share": 1.0
+      },
+      {
+        "shipping_mode": "Same Day",
+        "rows": 9737,
+        "scheduled_days": 0.0,
+        "observed_mean": 0.4782787306151792,
+        "observed_std": 0.4995536166339454,
+        "support": [
+          0,
+          1
+        ],
+        "is_degenerate": false,
+        "uniform_chi2": 18.376193899558384,
+        "uniform_p_value": 1.8130915151637587e-05,
+        "reads_as_uniform": false,
+        "late_share": 0.4782787306151792
+      },
+      {
+        "shipping_mode": "Second Class",
+        "rows": 35216,
+        "scheduled_days": 2.0,
+        "observed_mean": 3.9908280327124035,
+        "observed_std": 1.4158996284707053,
+        "support": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "is_degenerate": false,
+        "uniform_chi2": 2.4725692866878695,
+        "uniform_p_value": 0.6495543309738867,
+        "reads_as_uniform": true,
+        "late_share": 0.7973080417991822
+      },
+      {
+        "shipping_mode": "Standard Class",
+        "rows": 107752,
+        "scheduled_days": 4.0,
+        "observed_mean": 3.995907268542579,
+        "observed_std": 1.4172657131770885,
+        "support": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "is_degenerate": false,
+        "uniform_chi2": 12.296811196079885,
+        "uniform_p_value": 0.01527532863664632,
+        "reads_as_uniform": true,
+        "late_share": 0.3976817135644814
+      }
+    ],
+    "degenerate_modes": [
+      "First Class"
+    ],
+    "uniform_modes": [
+      "Second Class",
+      "Standard Class"
+    ],
+    "top_mode_homogeneity": {
+      "left_mode": "Standard Class",
+      "right_mode": "Second Class",
+      "left_scheduled": 4.0,
+      "right_scheduled": 2.0,
+      "left_mean": 3.995907268542579,
+      "right_mean": 3.9908280327124035,
+      "left_std": 1.4172657131770885,
+      "right_std": 1.4158996284707053,
+      "chi2": 4.925323945029653,
+      "dof": 4,
+      "p_value": 0.2950459054570289,
+      "same_distribution": true
+    },
+    "regional_signal": {
+      "within_mode": "Standard Class",
+      "regions_tested": 23,
+      "rows": 107752,
+      "f_statistic": 2.4628367706922787,
+      "p_value": 0.00015546973036705295,
+      "eta_squared": 0.0005026981737248114,
+      "variance_explained_pct": 0.0503,
+      "regional_mean_min": 3.7274305555555554,
+      "regional_mean_max": 4.116883116883117,
+      "regional_mean_spread": 0.3894525613275617,
+      "spread_in_pooled_std": 0.275,
+      "pooled_std": 1.4172657131770885,
+      "statistically_significant": true,
+      "regional_signal_detected": false
+    },
+    "verdict": "generated, not observed: 1 mode(s) have zero realised variance; 2 mode(s) are indistinguishable from a discrete uniform draw; Standard Class and Second Class share one distribution despite scheduling 4 and 2 days; region explains 0.05% of lead-time variance"
+  },
+  "structural_break": {
+    "quantity_collapse": {
+      "collapse_detected": true,
+      "first_collapsed_month": "2017-10",
+      "months_affected": 4,
+      "persists_to_end": true,
+      "share_quantity_one_in_tail": 0.9895,
+      "order_lines_before": 5210,
+      "order_lines_after": 2139,
+      "products_before": 53.515151515151516,
+      "products_after": 13.0
+    },
+    "catalogue_turnover": {
+      "boundary": "2017-10-01",
+      "products_before": 100,
+      "products_after": 31,
+      "shared": 13,
+      "after_only": 18,
+      "before_only": 87
+    }
+  },
+  "derived_columns": {
+    "column": "Late_delivery_risk",
+    "reproduced_from": "Days for shipping (real) > Days for shipment (scheduled)",
+    "agreement": 0.9754984239886106,
+    "is_derived": true
+  },
+  "market_concurrency": {
+    "markets": 5,
+    "total_weeks": 144,
+    "max_share_of_weeks_active": 0.417,
+    "all_markets_concurrent": false
+  },
+  "aggregate_demand": {
+    "weeks": 144,
+    "mean": 2201.4861111111113,
+    "std": 120.1521172276264,
+    "coefficient_of_variation": 0.05457773120675491,
+    "autocorrelation": {
+      "lag_1": 0.050471446706808296,
+      "lag_2": -0.051063832154435315,
+      "lag_3": -0.02683908028258267,
+      "lag_4": 0.011703758781953937
+    },
+    "max_abs_autocorrelation": 0.051063832154435315
+  }
+}

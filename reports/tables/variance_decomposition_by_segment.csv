@@ -1,0 +1,5 @@
+segment,units,median_leadtime_share,median_demand_share,total_safety_stock,total_safety_stock_holding,median_understatement
+AX,7,0.8785,0.1215,822.8205,13635.594,2.8688
+BX,2,0.8569,0.1431,130.3686,1605.0961,2.7767
+BZ,2,0.1073,0.8927,12.8452,140.9107,1.0584
+CZ,29,0.1009,0.8991,142.1589,651.7213,1.0546

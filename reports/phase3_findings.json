@@ -1,0 +1,183 @@
+{
+  "leadtime_proxy": {
+    "label": "pooled across shipping modes",
+    "source": "outbound fulfilment time (Days for shipping (real)) used as a stated proxy for replenishment lead time; the extract contains no supplier or purchase order data",
+    "is_proxy": true,
+    "rows": 98263,
+    "mean_days": 3.9938735841568036,
+    "std_days": 1.4187410036618897,
+    "mean_weeks": 0.5705533691652577,
+    "std_weeks": 0.20267728623741282,
+    "coefficient_of_variation": 0.35522932155135245
+  },
+  "leadtime_proxy_mode": "Standard Class",
+  "cost_assumptions": {
+    "annual_holding_rate": 0.25,
+    "ordering_cost_per_order": 250.0,
+    "unit_cost_as_share_of_price": 0.65,
+    "note": "assumed, not observed; the extract carries no cost structure"
+  },
+  "variance_decomposition": [
+    {
+      "segment": "AX",
+      "units": 7,
+      "median_leadtime_share": 0.8785,
+      "median_demand_share": 0.1215,
+      "total_safety_stock": 822.8205,
+      "total_safety_stock_holding": 13635.594,
+      "median_understatement": 2.8688
+    },
+    {
+      "segment": "BX",
+      "units": 2,
+      "median_leadtime_share": 0.8569,
+      "median_demand_share": 0.1431,
+      "total_safety_stock": 130.3686,
+      "total_safety_stock_holding": 1605.0961,
+      "median_understatement": 2.7767
+    },
+    {
+      "segment": "BZ",
+      "units": 2,
+      "median_leadtime_share": 0.1073,
+      "median_demand_share": 0.8927,
+      "total_safety_stock": 12.8452,
+      "total_safety_stock_holding": 140.9107,
+      "median_understatement": 1.0584
+    },
+    {
+      "segment": "CZ",
+      "units": 29,
+      "median_leadtime_share": 0.1009,
+      "median_demand_share": 0.8991,
+      "total_safety_stock": 142.1589,
+      "total_safety_stock_holding": 651.7213,
+      "median_understatement": 1.0546
+    }
+  ],
+  "representatives": {
+    "AX": "Perfect Fitness Perfect Rip Deck",
+    "CZ": "ENO Atlas Hammock Straps"
+  },
+  "knee_points": {
+    "AX": {
+      "knee_service_level": 0.98,
+      "marginal_cost_threshold": 240.99915847804232,
+      "safety_stock_at_knee": 215.19347182157992,
+      "holding_cost_at_knee": 2097.786719616512,
+      "fill_rate_at_knee": 0.999328709916745
+    },
+    "CZ": {
+      "knee_service_level": 0.98,
+      "marginal_cost_threshold": 4.819686528968706,
+      "safety_stock_at_knee": 8.608644439284026,
+      "holding_cost_at_knee": 41.953152272547705,
+      "fill_rate_at_knee": 0.9998377603663473
+    }
+  },
+  "knee_caveat": "safety stock is proportional to the normal quantile of the target, so the marginal cost curve has one shape for every unit and the knee cannot differentiate segments; see differentiation_basis",
+  "differentiation_basis": [
+    {
+      "segment": "AX",
+      "units": 7,
+      "target_service_level": 0.98,
+      "annual_revenue": 9828260.4186,
+      "safety_stock_holding_cost": 13635.594,
+      "median_buffer_cost_per_1000_revenue": 1.384,
+      "median_days_of_cover": 17.9459
+    },
+    {
+      "segment": "BX",
+      "units": 2,
+      "target_service_level": 0.95,
+      "annual_revenue": 1444721.7281,
+      "safety_stock_holding_cost": 1605.0961,
+      "median_buffer_cost_per_1000_revenue": 1.1238,
+      "median_days_of_cover": 25.3448
+    },
+    {
+      "segment": "BZ",
+      "units": 2,
+      "target_service_level": 0.95,
+      "annual_revenue": 44419.8456,
+      "safety_stock_holding_cost": 140.9107,
+      "median_buffer_cost_per_1000_revenue": 3.1722,
+      "median_days_of_cover": 135.9342
+    },
+    {
+      "segment": "CZ",
+      "units": 29,
+      "target_service_level": 0.9,
+      "annual_revenue": 255031.1737,
+      "safety_stock_holding_cost": 651.7213,
+      "median_buffer_cost_per_1000_revenue": 2.5488,
+      "median_days_of_cover": 227.6037
+    }
+  ],
+  "sensitivity": [
+    {
+      "sigma_multiplier": 0.0,
+      "leadtime_std_days": 0.0,
+      "total_safety_stock_units": 484.78521382823953,
+      "total_annual_holding_cost": 6118.825723448399,
+      "median_leadtime_share_of_variance": 0.0,
+      "safety_stock_vs_base": 0.4374554769871049
+    },
+    {
+      "sigma_multiplier": 0.25,
+      "leadtime_std_days": 0.3546852509154724,
+      "total_safety_stock_units": 552.8109029358652,
+      "total_annual_holding_cost": 7206.212073061089,
+      "median_leadtime_share_of_variance": 0.0072370750236125814,
+      "safety_stock_vs_base": 0.498839796118786
+    },
+    {
+      "sigma_multiplier": 0.5,
+      "leadtime_std_days": 0.7093705018309449,
+      "total_safety_stock_units": 709.0431487958662,
+      "total_annual_holding_cost": 9698.169002067221,
+      "median_leadtime_share_of_variance": 0.0283331171962323,
+      "safety_stock_vs_base": 0.6398190374074199
+    },
+    {
+      "sigma_multiplier": 0.75,
+      "leadtime_std_days": 1.0640557527464174,
+      "total_safety_stock_units": 900.9849445198677,
+      "total_annual_holding_cost": 12749.614605587622,
+      "median_leadtime_share_of_variance": 0.06156884569634843,
+      "safety_stock_vs_base": 0.8130214936852095
+    },
+    {
+      "sigma_multiplier": 1.0,
+      "leadtime_std_days": 1.4187410036618897,
+      "total_safety_stock_units": 1108.193266128726,
+      "total_annual_holding_cost": 16033.322096574027,
+      "median_leadtime_share_of_variance": 0.1044535161443157,
+      "safety_stock_vs_base": 1.0
+    },
+    {
+      "sigma_multiplier": 1.25,
+      "leadtime_std_days": 1.773426254577362,
+      "total_safety_stock_units": 1323.1516861474236,
+      "total_annual_holding_cost": 19430.220496184105,
+      "median_leadtime_share_of_variance": 0.15415104005796612,
+      "safety_stock_vs_base": 1.1939719601163217
+    },
+    {
+      "sigma_multiplier": 1.5,
+      "leadtime_std_days": 2.128111505492835,
+      "total_safety_stock_units": 1542.6603911218629,
+      "total_annual_holding_cost": 22890.315409433268,
+      "median_leadtime_share_of_variance": 0.20787733770424355,
+      "safety_stock_vs_base": 1.3920499594000149
+    },
+    {
+      "sigma_multiplier": 2.0,
+      "leadtime_std_days": 2.8374820073237794,
+      "total_safety_stock_units": 1989.7303113370815,
+      "total_annual_holding_cost": 29914.725344198217,
+      "median_leadtime_share_of_variance": 0.31812311550674643,
+      "safety_stock_vs_base": 1.7954722990583103
+    }
+  ]
+}

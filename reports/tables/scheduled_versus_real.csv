@@ -1,0 +1,5 @@
+Shipping Mode,rows,scheduled_days,realised_mean_days,realised_std_days,bias_days,late_share,schedule_understates_variability
+Standard Class,98263,4,3.9939,1.4187,-0.0061,0.3978,True
+Second Class,32188,2,3.9921,1.4141,1.9921,0.7981,True
+First Class,25270,1,2.0,0.0,1.0,1.0,False
+Same Day,8851,0,0.4771,0.4995,0.4771,0.4771,True

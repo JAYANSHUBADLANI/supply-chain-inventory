@@ -1,0 +1,10 @@
+{
+  "raw_rows": 180519,
+  "excluded_cancelled_or_fraud": 7754,
+  "excluded_after_clean_window": 8193,
+  "kept_rows": 164572,
+  "clean_window_start": "2015-01-01",
+  "clean_window_end": "2017-09-30",
+  "products_kept": 100,
+  "weeks_kept": 144
+}

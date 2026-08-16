@@ -1,0 +1,204 @@
+{
+  "demand": {
+    "ledger": {
+      "planning_units_seen": 100,
+      "excluded_thin_sample": 46,
+      "excluded_intermittent": 14,
+      "carried_forward": 40,
+      "carried_forward_demand_share": 0.9569387715327025
+    },
+    "eligible_by_coverage": 54,
+    "median_cv_carried": 0.6989333701738952,
+    "cv_range_carried": [
+      0.08948662216852382,
+      0.7924503781120196
+    ]
+  },
+  "leadtime": {
+    "pooled_proxy": {
+      "label": "pooled across shipping modes",
+      "source": "outbound fulfilment time (Days for shipping (real)) used as a stated proxy for replenishment lead time; the extract contains no supplier or purchase order data",
+      "is_proxy": true,
+      "rows": 164572,
+      "mean_days": 3.4982317769729967,
+      "std_days": 1.6236686071017088,
+      "mean_weeks": 0.4997473967104281,
+      "std_weeks": 0.23195265815738697,
+      "coefficient_of_variation": 0.4641398027967894
+    },
+    "by_mode": [
+      {
+        "label": "First Class",
+        "source": "outbound fulfilment time (Days for shipping (real)) used as a stated proxy for replenishment lead time; the extract contains no supplier or purchase order data; restricted to shipping mode First Class",
+        "is_proxy": true,
+        "rows": 25270,
+        "mean_days": 2.0,
+        "std_days": 0.0,
+        "mean_weeks": 0.2857142857142857,
+        "std_weeks": 0.0,
+        "coefficient_of_variation": 0.0
+      },
+      {
+        "label": "Same Day",
+        "source": "outbound fulfilment time (Days for shipping (real)) used as a stated proxy for replenishment lead time; the extract contains no supplier or purchase order data; restricted to shipping mode Same Day",
+        "is_proxy": true,
+        "rows": 8851,
+        "mean_days": 0.47712122923963396,
+        "std_days": 0.49950450577598343,
+        "mean_weeks": 0.068160175605662,
+        "std_weeks": 0.0713577865394262,
+        "coefficient_of_variation": 1.0469131850871962
+      },
+      {
+        "label": "Second Class",
+        "source": "outbound fulfilment time (Days for shipping (real)) used as a stated proxy for replenishment lead time; the extract contains no supplier or purchase order data; restricted to shipping mode Second Class",
+        "is_proxy": true,
+        "rows": 32188,
+        "mean_days": 3.9921088604448864,
+        "std_days": 1.4141476069372527,
+        "mean_weeks": 0.5703012657778409,
+        "std_weeks": 0.20202108670532182,
+        "coefficient_of_variation": 0.3542357326347203
+      },
+      {
+        "label": "Standard Class",
+        "source": "outbound fulfilment time (Days for shipping (real)) used as a stated proxy for replenishment lead time; the extract contains no supplier or purchase order data; restricted to shipping mode Standard Class",
+        "is_proxy": true,
+        "rows": 98263,
+        "mean_days": 3.9938735841568036,
+        "std_days": 1.4187410036618897,
+        "mean_weeks": 0.5705533691652577,
+        "std_weeks": 0.20267728623741282,
+        "coefficient_of_variation": 0.35522932155135245
+      }
+    ],
+    "scheduled_versus_real": [
+      {
+        "Shipping Mode": "Standard Class",
+        "rows": 98263,
+        "scheduled_days": 4,
+        "realised_mean_days": 3.9939,
+        "realised_std_days": 1.4187,
+        "bias_days": -0.0061,
+        "late_share": 0.3978,
+        "schedule_understates_variability": true
+      },
+      {
+        "Shipping Mode": "Second Class",
+        "rows": 32188,
+        "scheduled_days": 2,
+        "realised_mean_days": 3.9921,
+        "realised_std_days": 1.4141,
+        "bias_days": 1.9921,
+        "late_share": 0.7981,
+        "schedule_understates_variability": true
+      },
+      {
+        "Shipping Mode": "First Class",
+        "rows": 25270,
+        "scheduled_days": 1,
+        "realised_mean_days": 2.0,
+        "realised_std_days": 0.0,
+        "bias_days": 1.0,
+        "late_share": 1.0,
+        "schedule_understates_variability": false
+      },
+      {
+        "Shipping Mode": "Same Day",
+        "rows": 8851,
+        "scheduled_days": 0,
+        "realised_mean_days": 0.4771,
+        "realised_std_days": 0.4995,
+        "bias_days": 0.4771,
+        "late_share": 0.4771,
+        "schedule_understates_variability": true
+      }
+    ],
+    "sensitivity_multipliers": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5,
+      2.0
+    ]
+  },
+  "segmentation": {
+    "concentration": {
+      "planning_units": 100,
+      "units_for_50pct_revenue": 4,
+      "units_for_80pct_revenue": 7,
+      "units_for_95pct_revenue": 12,
+      "share_of_units_for_80pct_revenue": 0.07,
+      "revenue_share_of_top_fifth": 0.9609,
+      "textbook_expectation": "top 20 percent of units carry about 80 percent of revenue"
+    },
+    "degeneracy": {
+      "populated_cells": 6,
+      "possible_cells": 9,
+      "a_tier_units": 7,
+      "a_tier_xyz_classes": [
+        "X"
+      ],
+      "a_tier_collapses_to_one_xyz_class": true,
+      "cells_with_single_unit": 0
+    },
+    "service_levels": {
+      "A": 0.98,
+      "B": 0.95,
+      "C": 0.9
+    },
+    "cells": [
+      {
+        "abc_class": "A",
+        "xyz_class": "X",
+        "units": 7,
+        "revenue": 27034447.9079506,
+        "revenue_share": 0.8245,
+        "median_cv": 0.105
+      },
+      {
+        "abc_class": "B",
+        "xyz_class": "X",
+        "units": 2,
+        "revenue": 3973974.25689256,
+        "revenue_share": 0.1212,
+        "median_cv": 0.12
+      },
+      {
+        "abc_class": "B",
+        "xyz_class": "Z",
+        "units": 3,
+        "revenue": 176895.88159188,
+        "revenue_share": 0.0054,
+        "median_cv": 0.704
+      },
+      {
+        "abc_class": "C",
+        "xyz_class": "X",
+        "units": 8,
+        "revenue": 66598.4484798,
+        "revenue_share": 0.002,
+        "median_cv": 0.045
+      },
+      {
+        "abc_class": "C",
+        "xyz_class": "Y",
+        "units": 13,
+        "revenue": 163369.71931332,
+        "revenue_share": 0.005,
+        "median_cv": 0.446
+      },
+      {
+        "abc_class": "C",
+        "xyz_class": "Z",
+        "units": 67,
+        "revenue": 1372963.525600256,
+        "revenue_share": 0.0419,
+        "median_cv": 0.697
+      }
+    ]
+  }
+}
