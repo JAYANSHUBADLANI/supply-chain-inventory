@@ -1,5 +1,7 @@
 # Inventory Policy Under Demand and Lead-Time Uncertainty
 
+[![tests](https://github.com/JAYANSHUBADLANI/supply-chain-inventory/actions/workflows/tests.yml/badge.svg)](https://github.com/JAYANSHUBADLANI/supply-chain-inventory/actions/workflows/tests.yml)
+
 I built a single-echelon inventory policy (safety stock, reorder point, order quantity) on
 the DataCo Smart Supply Chain extract, segmented products by revenue contribution and
 demand variability, and backtested the result on a held-out window against two alternative
